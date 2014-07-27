@@ -1,0 +1,23 @@
+{
+  "name": "gurps-sheet",
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/josmardias/gurps-sheet",
+  "authors": [
+    "Josmar Dias <josmarnet@gmail.com>"
+  ],
+  "description": "Chracter sheet creator",
+  "keywords": [
+    "character",
+    "gurps",
+    "web"
+  ],
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "**/.*"
+  ],
+  "dependencies": {
+    "gurpsjs": "~0.0.5"
+  }
+}
