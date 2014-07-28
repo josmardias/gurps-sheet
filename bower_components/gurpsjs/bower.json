@@ -1,0 +1,28 @@
+{
+  "name": "gurpsjs",
+  "version": "0.0.6",
+  "description": "A GURPS JavaScript library",
+  "keywords": [
+    "rpg",
+    "gurps",
+    "javascript",
+    "library"
+  ],
+  "homepage": "https://github.com/josmardias/gurpsjs",
+  "license": "MIT",
+  "authors": [
+    "Josmar Dias <josmarnet@gmail.com>"
+  ],
+  "main": "src/gurps.js",
+  "ignore": [
+    "test",
+    "node_modules",
+    "coverage",
+    "karma",
+    "package.json",
+    "Gruntfile.js",
+    "travis.sh",
+    "lib",
+    "**/.*"
+  ]
+}
