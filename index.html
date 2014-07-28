@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/readable/bootstrap.min.css" rel="stylesheet" />
+  <link href="layout.css" rel="stylesheet" />
+  <link href="details.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#nav-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/" class="navbar-brand">Gurps Sheet</a>
+      </div>
+      <nav class="collapse navbar-collapse" id="nav-collapse" role="navigation">
+        <!--ul class="nav navbar-nav">
+            <li class="active"><a href="#">Menu1</a>
+            </li>
+            <li><a href="#">Menu2</a>
+            </li>
+          </ul-->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://bower.io/search/?q=gurpsjs" target="_blank">Built With Gurps.js</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <div class="container">
+
+      <form role="form">
+        <fieldset class="form-horizontal">
+          <legend>Player</legend>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="player-name">Name:</label>
+            <div class="col-sm-10">
+              <input type="email" id="player-name" class="form-control" placeholder="Name" autofocus />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-horizontal">
+          <legend>Character</legend>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Name:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" placeholder="Name" />
+            </div>
+          </div>
+        </fieldset>
+
+        <legend>Attributes</legend>
+        <div id="attributes" class="text-center">
+          <fieldset class="form-inline">
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[ST]">ST</label>
+                <input type="number" name="attr[ST]" id="character[ST]" class="form-control" placeholder="10">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[DX]">DX</label>
+                <input type="number" name="attr[DX]" id="attr[DX]" class="form-control" placeholder="10">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[IQ]">IQ</label>
+                <input type="number" name="attr[IQ]" id="attr[IQ]" class="form-control" placeholder="10">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[HT]">HT</label>
+                <input type="number" name="attr[HT]" id="attr[HT]" class="form-control" placeholder="10">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-inline">
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[HP]">HP</label>
+                <input type="number" name="attr[HP]" id="attr[HP]" class="form-control" placeholder="10">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[FP]">FP</label>
+                <input type="number" name="attr[FP]" id="attr[FP]" class="form-control" placeholder="10">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[will]">Will</label>
+                <input type="number" name="attr[will]" id="attr[will]" class="form-control" placeholder="10">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-inline">
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[basicSpeed]">Basic Speed</label>
+                <input type="number" name="attr[basicSpeed]" id="attr[basicSpeed]" class="form-control" placeholder="5">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[basicSpeed]">Basic Move</label>
+                <input type="number" name="attr[basicSpeed]" id="attr[basicSpeed]" class="form-control" placeholder="5">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[dodge]">Dodge</label>
+                <input type="number" name="attr[dodge]" id="attr[dodge]" class="form-control" placeholder="8">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-inline">
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[perception]">Perception</label>
+                <input type="number" name="attr[perception]" id="attr[perception]" class="form-control" placeholder="10">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-inline">
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[vision]">Vision</label>
+                <input type="number" name="attr[vision]" id="attr[vision]" class="form-control" placeholder="10">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[hearing]">Hearing</label>
+                <input type="number" name="attr[hearing]" id="attr[hearing]" class="form-control" placeholder="10">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[tasteSmell]">Taste/Smell</label>
+                <input type="number" name="attr[tasteSmell]" id="attr[tasteSmell]" class="form-control" placeholder="10">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <label class="input-group-addon" for="attr[touch]">Touch</label>
+                <input type="number" name="attr[touch]" id="attr[touch]" class="form-control" placeholder="10">
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+
+    </div>
+  </main>
+</body>
+
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="bower_components/gurpsjs/src/gurps.js"></script>
+<script src="bower_components/gurpsjs/src/attributes.js"></script>
+<script src="bower_components/gurpsjs/src/character.js"></script>
+<script src="app.js"></script>
+
+</html>

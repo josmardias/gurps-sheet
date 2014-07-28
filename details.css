@@ -1,0 +1,7 @@
+#attributes .form-control {
+    max-width: 70px;
+}
+
+fieldset {
+    padding-bottom: 30px;
+}
