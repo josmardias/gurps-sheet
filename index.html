@@ -38,7 +38,7 @@
   <main role="main">
     <div class="container">
 
-      <form role="form">
+      <form role="form" id="sheet">
         <fieldset class="form-horizontal">
           <legend>Player</legend>
           <div class="form-group">
@@ -52,9 +52,9 @@
         <fieldset class="form-horizontal">
           <legend>Character</legend>
           <div class="form-group">
-            <label class="col-sm-2 control-label">Name:</label>
+            <label class="col-sm-2 control-label" for="char-name">Name:</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" placeholder="Name" />
+              <input type="email" id="char-name" class="form-control" placeholder="Name" />
             </div>
           </div>
         </fieldset>
@@ -91,14 +91,14 @@
           <fieldset class="form-inline">
             <div class="form-group">
               <div class="input-group">
-                <label class="input-group-addon" for="attr[HP]">HP</label>
-                <input type="number" name="attr[HP]" id="attr[HP]" class="form-control" placeholder="10">
+                <label class="input-group-addon" for="attr[hp]">HP</label>
+                <input type="number" name="attr[hp]" id="attr[hp]" class="form-control" placeholder="10">
               </div>
             </div>
             <div class="form-group">
               <div class="input-group">
-                <label class="input-group-addon" for="attr[FP]">FP</label>
-                <input type="number" name="attr[FP]" id="attr[FP]" class="form-control" placeholder="10">
+                <label class="input-group-addon" for="attr[fp]">FP</label>
+                <input type="number" name="attr[fp]" id="attr[fp]" class="form-control" placeholder="10">
               </div>
             </div>
             <div class="form-group">
