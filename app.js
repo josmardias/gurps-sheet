@@ -13,7 +13,7 @@ var update_sheet = function (character) {
 
   attrs = [
     "ST", "DX", "IQ", "HT",
-    "hp", "fp", "will",
+    "HP", "FP", "will",
     "basicMove", "basicSpeed", "dodge",
     "perception",
     "vision", "hearing", "tasteSmell", "touch"
