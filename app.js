@@ -28,14 +28,15 @@ var add_listeners = function (character) {
   "use strict";
 
   $("#attributes").on("change", function (event) {
-    var el, attrName;
+    var el, attrName, attr;
 
     event.stopPropagation();
     el = event.target || event.srcElement;
     attrName = el.getAttribute("name").split('[')[1].split(']')[0];
 
-    debugger;
-    character.setAttribute(attrName, el.value);
+    attr = {};
+    attr[attrName] = el.value;
+    character.setAttribute(attr);
     update_sheet(character);
   });
 };
