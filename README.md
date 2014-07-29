@@ -7,6 +7,6 @@ Work in progress.
 
 Powered by [Gurps.js]
 
-[Online]: http://josmardias.github.io/gurps-sheet
+[Online]: https://josmardias.github.io/gurps-sheet
 [Gurps.js]: https://github.com/josmardias/gurpsjs
 
